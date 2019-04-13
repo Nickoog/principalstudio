@@ -95,10 +95,6 @@ body {
     font-weight: normal;
     color: #222222;
 }
-h1 {
-    font-size: 60px;
-    line-height: 1;
-}
 h2 {
     font-size: 20px;
     font-weight: normal;
@@ -297,6 +293,29 @@ p {
 /* start css for MAIN */
 .main{
     background-color: white;
+    margin-bottom: 75px;
+}
+h1 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 34px 0px;
+}
+p {
+    font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+    .main {
+        margin-bottom: 175px;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        margin: 45px 0px;
+    }
+    p {
+        font-size: 16px;
+        margin: 25px 0px;
+    }
 }
 /* end css for MAIN */
 
