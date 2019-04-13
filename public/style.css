@@ -1,0 +1,34 @@
+/* Set up fonts */
+
+@font-face {
+    font-family: 'Linotype';
+    src: url('/fonts/Linotype - Neue Haas Unica Pro Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Linotype';
+    src: url('/fonts/Linotype - Neue Haas Unica Pro Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Linotype';
+    src: url('/fonts/Linotype - Neue Haas Unica Pro Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Linotype';
+    src: url('/fonts/Linotype - Neue Haas Unica Pro Medium It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+h1 {
+    color:red;
+    font-family: 'Linotype';
+    font-weight: normal;
+    font-style: italic;
+}
