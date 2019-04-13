@@ -125,13 +125,13 @@ img {
     position: relative;
     background-image: url("/images/hero-image.png"); 
     background-color: black; 
-    height: 600px; 
+    height: 350px; 
     background-position: center top; 
     background-repeat: no-repeat;
     background-size: cover;
 }
 .brand-wrapper {
-    width: 80px;
+    width: 60px;
 }
 .menu-container {
     position: absolute;
@@ -241,6 +241,12 @@ img {
     left: 50%;
 }
 @media screen and (min-width: 768px) {
+    .banner {
+        height: 600px;
+    }
+    .brand-wrapper {
+        width: 70px;
+    }
     .menu-container {
         margin-top: 55px;
     }
@@ -258,7 +264,7 @@ img {
         transform: translateX(0);
     }
     .navbar-container .nav-container {
-        margin-top: 28px;
+        margin-top: 15px;
     }
     .navbar-container .nav-container ul {
         display: flex;
@@ -286,7 +292,7 @@ img {
         margin-top: 0px;
     }
     .navbar-container .switcher span {
-        font-size: 14px;
+        font-size: 11px;
     }
     .navbar-container .switcher span:hover {
         color: white;
