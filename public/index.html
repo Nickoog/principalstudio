@@ -11,20 +11,29 @@
     </head>
 
     <body class="grid-container">
-        <header class="banner container">
-            <div class="navbar-container">
+        <header class="banner">
+            <div class="menu-container container">
                 <div class="brand-wrapper">
                     <a class="brand" href="#">
                         <img src="/images/branding.png">
                     </a>
                 </div>
-                <div class="desktop-menu">
-                    <nav class="nav-container">
+                <div class="burger-container">
+                    <div id="nav-icon" class="open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-container open">
+                    <nav class="nav-container container">
                         <ul class="items-list">
                             <li class="menu-item">
                                 <a href="#">À propos</a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item active">
                                 <a href="#">Réalisations</a>
                             </li>
                             <li class="menu-item">
@@ -38,21 +47,11 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="burger-container">
-                    <div id="nav-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="switcher container">
+                        <span class="active">fr</span>
+                        <span>en</span>
                     </div>
                 </div>
-                <div class="switcker">
-                    <span>fr</span>
-                    <span>/</span>
-                    <span>en</span>
-                </div>
-            </div>
         </header>
         <div class="main container">
             <h1>Pointer et non griffer les orteils</h1>

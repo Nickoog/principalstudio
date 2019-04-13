@@ -91,16 +91,27 @@
 body {
     width: 100%;
     margin: 0;
+    font-family: 'Linotype';
+    font-weight: normal;
+    color: #222222;
+}
+h1 {
+    font-size: 60px;
+    line-height: 1;
+}
+h2 {
+    font-size: 20px;
+    font-weight: normal;
 }
 p {
-    width: 100%;
+    font-size: 16px;
 }
 .container{
     max-width: 100%;
     padding-right: 19px;
     padding-left: 19px;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
     .container{
         max-width: 100%;
         padding-right: 55px;
@@ -110,7 +121,177 @@ p {
 /* end Gobal CSS */
 
 /* start css for HEADER */
-
+.banner{
+    position: relative;
+    background-image: url("/images/hero-image.png"); 
+    background-color: black; 
+    height: 600px; 
+    background-position: center top; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px
+} 
+.navbar-container {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #222222;
+}
+.navbar-container .nav-container {
+    margin-top: 180px;
+}
+.navbar-container .nav-container ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.navbar-container .nav-container ul li {
+    margin-top: 10px;
+}
+.navbar-container .nav-container ul a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Linotype';
+    font-weight: bold;
+    font-size: 28px;
+}
+.navbar-container .switcher {
+    text-transform: uppercase;
+    color: #434343;
+    margin-top: 50px;
+}
+.navbar-container .switcher span {
+    cursor: pointer;
+    transition: 0.3ms color linear;
+}
+.navbar-container .switcher .active {
+    color: white;
+}
+.navbar-container .switcher span:nth-child(2) {
+    margin-left: 20px;
+}
+.navbar-container {
+    transform: translateX(100%);
+    transition: 0.3s transform linear;
+}
+.navbar-container.open {
+    transform: translateX(0)
+}
+.burger-container {
+    visibility: visible;
+}
+#nav-icon {
+    width: 35px;
+    height: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+    top: 12px;
+}
+#nav-icon span:nth-child(4) {
+    top: 24px;
+}
+#nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+#nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+#nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+#nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+@media screen and (min-width: 768px) {
+    .menu-container {
+        margin-top: 55px;
+    }
+    .burger-container {
+        visibility: hidden;
+    }
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 20;
+        background-color: transparent;
+        height: auto;
+        margin-top: 30px;
+        transform: translateX(0);
+    }
+    .navbar-container .nav-container {
+        margin-top: 28px;
+    }
+    .navbar-container .nav-container ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navbar-container .nav-container ul li {
+        margin-top: 0px;
+    }
+    .navbar-container .nav-container ul a {
+        margin-left: 20px;
+        color: #434343;
+        transition: 0.3s color linear;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .navbar-container .nav-container ul .active a {
+        color: white;
+    }
+    .navbar-container .nav-container ul a:hover {
+        color: white;
+    }
+    .navbar-container .switcher {
+        order: -1;
+        align-self: flex-end;
+        margin-top: 0px;
+    }
+    .navbar-container .switcher span {
+        font-size: 14px;
+    }
+    .navbar-container .switcher span:hover {
+        color: white;
+    }
+    .navbar-container .switcher span:nth-child(2) {
+        margin-left: 10px;
+    }
+}
 /* end css for HEADER */
 
 /* start css for MAIN */
