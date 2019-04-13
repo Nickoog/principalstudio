@@ -1,0 +1,22 @@
+{
+  "name": "principalstudio",
+  "version": "1.0.0",
+  "description": "Test pratique",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nickoog/principalstudio.git"
+  },
+  "author": "nicolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nickoog/principalstudio/issues"
+  },
+  "homepage": "https://github.com/Nickoog/principalstudio#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
