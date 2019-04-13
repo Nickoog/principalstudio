@@ -356,15 +356,21 @@ img {
     background-color: #222222;
     color: white;
     cursor: pointer;
+    transition: 0.3s all linear;
 }
 @media screen and (min-width: 768px) {
     .sidebar .sidebar-container{
         position: sticky;
         top: 0;
+        padding-top: 45px;
     }
     .sidebar .image-wrapper {
         width: 200px;
-        margin-top: 50px;
+        margin-top: 0;
+    }
+    .sidebar button:hover {
+        border: 1px solid #c8c8c8;
+        background-color: #c8c8c8;
     }
 }
 /* end css for SIDEBAR */
@@ -373,5 +379,24 @@ img {
 .footer{
     background-color: #222222;
     height: 100%;
+}
+.footer .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 25px 0;
+}
+.footer .footer-container .image-wrapper {
+    width: 40px;
+}
+.footer .footer-container p {
+    color: white;
+    font-size: 14px;
+    margin-left: 30px;
+}
+@media screen and (min-width: 768px) {
+    .footer .footer-container {
+        margin: 30px 0;
+    }
 }
 /* end css for FOOTER */
