@@ -1,5 +1,4 @@
 /* Set up fonts */
-
 @font-face {
     font-family: 'Linotype';
     src: url('/fonts/Linotype - Neue Haas Unica Pro Bold.ttf') format('truetype');
@@ -27,7 +26,6 @@
 }
 
 /* set up gird  */
-
 .banner {
     grid-area: header;
 }
@@ -50,7 +48,6 @@
         "sidebar"
         "footer";
 }
-
 @media screen and (min-width: 768px) {
     .grid-container {
         display: grid;
@@ -87,20 +84,12 @@
 /* end gird setup */
 
 /* start Gobal CSS */
-
 body {
     width: 100%;
     margin: 0;
     font-family: 'Linotype';
     font-weight: normal;
     color: #222222;
-}
-h2 {
-    font-size: 20px;
-    font-weight: normal;
-}
-p {
-    font-size: 16px;
 }
 img {
     width: 100%;
@@ -132,6 +121,7 @@ img {
 }
 .brand-wrapper {
     width: 60px;
+    cursor: pointer;
 }
 .menu-container {
     position: absolute;
@@ -176,7 +166,6 @@ img {
 }
 .navbar-container .switcher span {
     cursor: pointer;
-    transition: 0.3ms color linear;
 }
 .navbar-container .switcher .active {
     color: white;
@@ -193,6 +182,7 @@ img {
 }
 .burger-container {
     visibility: visible;
+    opacity: 1;
 }
 #nav-icon {
     width: 35px;
@@ -252,6 +242,7 @@ img {
     }
     .burger-container {
         visibility: hidden;
+        opacity: 0;
     }
     .navbar-container {
         display: flex;
@@ -280,10 +271,8 @@ img {
         font-weight: normal;
         font-size: 14px;
     }
+    .navbar-container .nav-container ul a:hover,
     .navbar-container .nav-container ul .active a {
-        color: white;
-    }
-    .navbar-container .nav-container ul a:hover {
         color: white;
     }
     .navbar-container .switcher {
@@ -293,6 +282,7 @@ img {
     }
     .navbar-container .switcher span {
         font-size: 11px;
+        transition: 0.3ms color linear;
     }
     .navbar-container .switcher span:hover {
         color: white;
@@ -367,6 +357,7 @@ img {
 @media screen and (min-width: 768px) {
     .sidebar .sidebar-container{
         position: sticky;
+        position: -webkit-sticky; /* Safari */
         top: 0;
         padding-top: 45px;
     }
