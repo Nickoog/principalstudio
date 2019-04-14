@@ -73,7 +73,7 @@
 @media screen and (min-width: 1600px) {
     .grid-container {
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 75% 25%;
         grid-template-rows: auto;
         grid-template-areas: 
             "header header"
@@ -137,9 +137,15 @@ img {
 .navbar-container {
     height: 100vh;
     position: absolute;
-    right: 0;
-    left: 0;
+    left: -100%;
+    right: 100%;
     background-color: #222222;
+    transition: 0.3s right linear,
+                0.3s left linear ;
+}
+.navbar-container.open {
+    left: 0;
+    right: 0;
 }
 .navbar-container .nav-container {
     margin-top: 180px;
@@ -172,13 +178,6 @@ img {
 }
 .navbar-container .switcher span:nth-child(2) {
     margin-left: 20px;
-}
-.navbar-container {
-    transform: translateX(100%);
-    transition: 0.3s transform linear;
-}
-.navbar-container.open {
-    transform: translateX(0)
 }
 .burger-container {
     visibility: visible;
@@ -232,13 +231,14 @@ img {
 }
 @media screen and (min-width: 768px) {
     .banner {
-        height: 600px;
+        height: 700px;
     }
     .brand-wrapper {
         width: 70px;
     }
     .menu-container {
         margin-top: 55px;
+        right: 70%;
     }
     .burger-container {
         visibility: hidden;
@@ -248,11 +248,11 @@ img {
         display: flex;
         flex-direction: column;
         position: relative;
-        z-index: 20;
+        left: 0;
+        right: 0;
         background-color: transparent;
         height: auto;
         margin-top: 30px;
-        transform: translateX(0);
     }
     .navbar-container .nav-container {
         margin-top: 15px;
@@ -313,6 +313,7 @@ img {
     }
     .main h1 {
         font-size: 60px;
+        font-weight: bold;
         line-height: 1;
         margin: 45px 0px;
     }
@@ -336,7 +337,8 @@ img {
     border-radius: 50%;
 }
 .sidebar h2 {
-    margin: 0;
+    margin: 10px 0;
+    line-height: 1;
 }
 .sidebar p {
     font-size: 14px;
